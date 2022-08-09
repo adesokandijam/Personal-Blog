@@ -1,3 +1,5 @@
+import RichTextEditor from "../../components/richtext/RichTextEditor"
+import React from "react";
 import "./write.css"
 
 export default function Write() {
@@ -16,8 +18,9 @@ export default function Write() {
                 <input type="file" id="fileInput" style={{display:"none"}}/>
                 <input type="text" placeholder="Title" className="writeInput" autoFocus={true}/>
             </div>
-            <div className="writeFormGroup">
-              <textarea placeholder="Tell your Story" type="text" className="writeInput writeText"></textarea>
+            
+            <div className="writeRichText">
+            <RichTextEditor/>
             </div>
            <button className="writeSubmit">Publish</button>
         </form>
