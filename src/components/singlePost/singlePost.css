@@ -1,5 +1,5 @@
 .singlePost{
-    flex: 9;
+    margin-right: 5px;
 }
 
 .singlePostWrapper{
@@ -54,9 +54,12 @@
     line-height: 25px;
 }
 
-.singlePostDesc::first-letter{
-    margin-left: 20px;
-    font-size: 30px;
-    font-weight: 600;
+.singlePostDesc code{
+    color: black;
+    font-size: 18px;
+    line-height: 25px;
+    background-color: lightgray
 }
+
+
 

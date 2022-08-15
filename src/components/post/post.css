@@ -1,5 +1,5 @@
 .post {
-    width: 385px;
+    width: fit-content;
     margin: 15px 25px 40px 25px;
 }
 .postImg{
@@ -13,6 +13,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.postInfo hr{
+    color: black;
+    width: 100%;
 }
 
 .postCat{
@@ -33,6 +38,8 @@
     cursor: pointer;
     text-align: center;
 }
+
+
 
 .postDate{
     font-family: 'Lora', serif;
