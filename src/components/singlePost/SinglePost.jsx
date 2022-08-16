@@ -24,12 +24,6 @@ export default function SinglePost() {
     console.log(data)
   return (
     <div className="singlePost">
-        <div className="singlePostWrapper">
-            {post?.image_location.S && (<img className="singlePostImg"
-            src={post?.image_location.S}
-            alt=""
-            />)}
-            
         <h1 className="singlePostTitle">{post?.title.S}
             <div className="singlePostEdit">
                 <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
@@ -37,6 +31,13 @@ export default function SinglePost() {
             </div>
             
         </h1>
+        <div className="singlePostWrapper">
+            {post?.image_location.S && (<img className="singlePostImg"
+            src={post?.image_location.S}
+            alt=""
+            />)}
+            
+        
         <div className="singlePostInfo">
             <span className="singlePostAuthor">Author: <b>{post?.author.S}</b></span>
             <span className="singlePostDate">{post?.date.S}</span>

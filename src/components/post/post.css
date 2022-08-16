@@ -13,21 +13,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
+    justify-content: center;
 }
 
 .postInfo hr{
     color: black;
     width: 100%;
-}
-
-.postCat{
-    font-family: 'Varela', sans-serif;
-    font-size: 11px;
-    color: #be9656;
-    line-height: 20px;
-    margin-top: 15px;
-    margin-right: 10px;
-    cursor: pointer;
 }
 
 .postTitle{
@@ -37,6 +29,8 @@
     margin-top: 15px;
     cursor: pointer;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -49,15 +43,3 @@
     margin-top: 15px;
 }
 
-.postDesc{
-    font-family: 'Varela Round', sans-serif;
-    font-size: 14px;
-    color: #444;
-    line-height: 24px;
-    margin-top: 15px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-}
