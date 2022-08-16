@@ -25,10 +25,11 @@ export default function SinglePost() {
   return (
     <div className="singlePost">
         <div className="singlePostWrapper">
-            <img className="singlePostImg"
+            {post?.image_location.S && (<img className="singlePostImg"
             src={post?.image_location.S}
             alt=""
-            />
+            />)}
+            
         <h1 className="singlePostTitle">{post?.title.S}
             <div className="singlePostEdit">
                 <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
