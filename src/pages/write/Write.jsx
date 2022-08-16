@@ -25,8 +25,7 @@ export default function Write() {
   'image_name': filename}}).then(res =>{
     setUrl( res?.data.url)
   setField(res?.data.fields)
-  
-
+  setImageLocation(filename)
   })
   
   },[] )
@@ -41,7 +40,6 @@ export default function Write() {
     
     if (file){
       const form = new FormData()
-      setImageLocation(filename)
       Object.keys(field).forEach(key => form.append(key, field[key]));
       form.append('file',file)
       try {

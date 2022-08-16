@@ -11,12 +11,7 @@ export default function Post
         <Link to={`/post/${post.id.S}`}>
         <span className="postTitle" > {post.title.S}</span>
         </Link>
-        
-        <hr/>
-        
       </div>
-      <div className="postDesc" 
-      dangerouslySetInnerHTML={{__html:post.text.S}}/>
     </div>
   )
 }
