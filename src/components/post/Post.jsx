@@ -9,7 +9,7 @@ export default function Post
       <div className="postInfo">
       <span className="postDate">{post.date.S}</span>
         <Link to={`/post/${post.id.S}`}>
-        <span className="postTitle"> {post.title.S}</span>
+        <span className="postTitle" > {post.title.S}</span>
         </Link>
         
         <hr/>
