@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, useLocation, useNavigate,  } from "react-router-dom";
 import "../../styles/Navbar.css";
-import { useAuthenticator, Heading } from '@aws-amplify/ui-react';
+import { useAuthenticator } from '@aws-amplify/ui-react';
 import awsExport from '../../aws-exports'
 import ReorderIcon from "@material-ui/icons/Reorder";
 import Amplify from 'aws-amplify'

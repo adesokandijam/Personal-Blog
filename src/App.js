@@ -13,6 +13,7 @@ import { RequireAuth } from "./RequireAuth";
 import Blog from "./pages/blog/Blog";
 import Navbar from "./components/topbar/Navbar";
 import Footer from "./components/footer/Footer";
+import Contact from "./pages/contact/Contact";
 
 
 
@@ -26,6 +27,7 @@ function App() {
       <Route exact path="/" element={<Home/>}/>
       <Route exact path="/blog" element={<Blog/>}/>
       <Route exact path="/login" element={ <Login/>}/>
+      <Route exact path="/contact" element={ <Contact/>}/>
       <Route exact path="/write" element={<RequireAuth>
       <Write/>
       </RequireAuth>

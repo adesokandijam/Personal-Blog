@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react'
 import Posts from '../../components/posts/Posts'
 import axios from "axios"
 
-const baseURL = "https://9q00gfj17d.execute-api.eu-west-2.amazonaws.com/dev/post"
+const baseURL = "https://9q00gfj17d.execute-api.eu-west-2.amazonaws.com/dev/posts/"
 
 export default function Blog() {
   const [posts,setPosts] = useState([]);
